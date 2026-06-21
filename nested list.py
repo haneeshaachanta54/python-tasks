@@ -1,10 +1,9 @@
-# CONVERT BINARY TO DECIMAL
-n = int(input("Enter a binary number: "))
-d = 0
-i = 0
-while n != 0:
-    r = n % 10
-    d = d + r * (2 ** i)
+n = 1011
+decimal = 0
+base = 1
+while n > 0:
+    digit = n % 10
+    decimal += digit * base
+    base = base * 2
     n = n // 10
-    i += 1
-print(d)
+print(decimal)
