@@ -1,0 +1,17 @@
+create database sql_task;
+use sql_task;
+create table employee (emp_name char(30),location varchar(50));
+alter table employee add emp_add varchar(50);
+desc employee;
+alter table employee add emp_id int first;
+desc employee;
+alter table employee add email varchar(25) after emp_name;
+desc employee;
+alter table employee modify emp_name varchar(30);
+desc employee;
+alter table employee add sid int,add department varchar(30);
+desc employee;
+alter table employee rename column emp_name to employeeName;
+desc employee;
+alter table employee drop column sid;
+desc employee;
